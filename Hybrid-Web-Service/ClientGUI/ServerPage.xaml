@@ -1,0 +1,23 @@
+﻿<Page x:Class="ClientGUI.ServerPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ClientGUI"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ServerPage">
+
+    <Grid>
+        <Label Content="Servers" HorizontalAlignment="Center" Margin="0,19,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Montserrat Black" Foreground="White"/>
+        <DataGrid AutoGenerateColumns="False" x:Name="servers" HorizontalAlignment="Center" Height="245" Margin="0,77,0,0" VerticalAlignment="Top" Width="780" PreviewMouseDoubleClick="clientPreview" CanUserAddRows="false"  >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" IsReadOnly="True" Binding="{Binding Id}" Width="50"></DataGridTextColumn>
+                <DataGridTextColumn Header="Name" IsReadOnly="True" Binding="{Binding name}" Width="250"></DataGridTextColumn>
+                <DataGridTextColumn Header="IP Address" IsReadOnly="True" Binding="{Binding ip}" Width="380"></DataGridTextColumn>
+                <DataGridTextColumn Header="Port" IsReadOnly="True" Binding="{Binding port}" Width="100"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="goRegister" Content="Add Server" Background="#FFE69500" HorizontalAlignment="Center" Margin="0,368,0,0" VerticalAlignment="Top" Click="Go_Register" RenderTransformOrigin="0.488,1.425" Height="25" Width="96" BorderBrush="#FFFFD8A7" Foreground="#FFFFF2DC" FontFamily="Montserrat Black"/>
+    </Grid>
+</Page>

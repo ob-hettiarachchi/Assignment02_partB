@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LocalDBModel2StoreContainer" CdmEntityContainer="LocalDBEntities2">
+    <EntitySetMapping Name="ActiveJobs">
+      <EntityTypeMapping TypeName="LocalDBModel2.ActiveJob">
+        <MappingFragment StoreEntitySet="ActiveJobs">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="jobId" ColumnName="jobId" />
+          <ScalarProperty Name="staus" ColumnName="staus" />
+          <ScalarProperty Name="results" ColumnName="results" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
