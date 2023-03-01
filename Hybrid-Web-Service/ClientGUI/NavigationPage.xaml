@@ -5,12 +5,12 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ClientGUI"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="1080" d:DesignWidth="1920"
       Title="NavigationPage">
 
     <Grid>
-        <Label Content="Navigation" HorizontalAlignment="Center" Margin="0,64,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Montserrat ExtraBold" Foreground="White" Width="564" Height="81" HorizontalContentAlignment="Center"/>
-        <Button Content="Register" HorizontalAlignment="Left" Margin="227,244,0,0" VerticalAlignment="Top" Height="35" Width="101" Background="#FF0BCC00" BorderBrush="#FFB4FFAE" Foreground="#FFCFFF9D" FontFamily="Montserrat ExtraBold" FontSize="18" Click="Go_Register"/>
-        <Button Content="Servers" HorizontalAlignment="Left" Margin="476,244,0,0" VerticalAlignment="Top" Height="35" Width="101" Background="#FFFFE500" BorderBrush="#FFFFE9CA" Foreground="#FFFF6206" FontFamily="Montserrat ExtraBold" FontSize="18" Click="Go_Server"/>
+        <Label Content="Navigation" HorizontalAlignment="Center" Margin="0,194,0,0" VerticalAlignment="Top" FontSize="72" FontFamily="Montserrat ExtraBold" Foreground="White" Width="564" Height="126" HorizontalContentAlignment="Center"/>
+        <Button Content="Register" HorizontalAlignment="Left" Margin="595,563,0,0" VerticalAlignment="Top" Height="76" Width="241" Background="#FF0BCC00" BorderBrush="#FFB4FFAE" Foreground="#FFCFFF9D" FontFamily="Montserrat ExtraBold" FontSize="36" Click="Go_Register"/>
+        <Button Content="Servers" HorizontalAlignment="Left" Margin="1125,563,0,0" VerticalAlignment="Top" Height="76" Width="241" Background="#FFFFE500" BorderBrush="#FFFFE9CA" Foreground="#FFFF6206" FontFamily="Montserrat ExtraBold" FontSize="36" Click="Go_Server"/>
     </Grid>
 </Page>

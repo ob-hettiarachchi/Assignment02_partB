@@ -5,18 +5,18 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ClientGUI"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="1080" d:DesignWidth="1920"
       Title="RegisterPage">
 
     <Grid>
-        <Label Content="Enter Name :" HorizontalAlignment="Left" Margin="102,141,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Foreground="White" FontFamily="Montserrat Medium"/>
-        <Label Content="Registeration" HorizontalAlignment="Center" Margin="0,34,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="48" Foreground="White" Width="446" HorizontalContentAlignment="Center" FontFamily="Montserrat ExtraBold"/>
-        <TextBox x:Name="nameBox" HorizontalAlignment="Left" Margin="268,139,0,0" VerticalAlignment="Top" Width="424" Height="32" FontSize="14"/>
-        <Label Content="Enter IP Address :" HorizontalAlignment="Left" Margin="102,206,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="138" FontSize="14" Foreground="White" FontFamily="Montserrat Medium"/>
-        <TextBox x:Name="ipBox" HorizontalAlignment="Left" Margin="268,204,0,0" VerticalAlignment="Top" Width="424" Height="32" FontSize="14"/>
-        <Button x:Name="loginbutton" Content="Register" HorizontalAlignment="Center" Margin="0,342,0,0" VerticalAlignment="Top" Width="100" Click="Register_Click" Background="#FF00A0FF" BorderBrush="White" Height="28" Foreground="White" FontFamily="Montserrat Black" FontSize="14"/>
-        <Label Content="Enter Port No :" HorizontalAlignment="Left" Margin="102,276,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="121" FontSize="14" Foreground="White" FontFamily="Montserrat Medium"/>
-        <TextBox x:Name="portBox" HorizontalAlignment="Left" Margin="268,274,0,0" VerticalAlignment="Top" Width="424" Height="32" FontSize="14"/>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="19,15,0,0" VerticalAlignment="Top" Height="28" Width="72" Background="White" BorderBrush="#FFABCBFF" FontFamily="Montserrat SemiBold" FontSize="14" Click="navi_back"/>
+        <Label Content="Enter Name :" HorizontalAlignment="Left" Margin="339,350,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Foreground="White" FontFamily="Montserrat Medium" RenderTransformOrigin="0.483,1.607" Width="236"/>
+        <Label Content="Registeration" HorizontalAlignment="Center" Margin="0,75,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="72" Foreground="White" Width="594" HorizontalContentAlignment="Center" FontFamily="Montserrat ExtraBold"/>
+        <TextBox x:Name="nameBox" HorizontalAlignment="Left" Margin="642,329,0,0" VerticalAlignment="Top" Width="1068" Height="60" FontSize="24"/>
+        <Label Content="Enter IP Address :" HorizontalAlignment="Left" Margin="339,501,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="236" FontSize="24" Foreground="White" FontFamily="Montserrat Medium"/>
+        <TextBox x:Name="ipBox" HorizontalAlignment="Left" Margin="642,480,0,0" VerticalAlignment="Top" Width="1068" Height="60" FontSize="24"/>
+        <Button x:Name="loginbutton" Content="Register" HorizontalAlignment="Center" Margin="0,850,0,0" VerticalAlignment="Top" Width="198" Click="Register_Click" Background="#FF00A0FF" BorderBrush="White" Height="52" Foreground="White" FontFamily="Montserrat Black" FontSize="24"/>
+        <Label Content="Enter Port No :" HorizontalAlignment="Left" Margin="339,640,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="236" FontSize="24" Foreground="White" FontFamily="Montserrat Medium"/>
+        <TextBox x:Name="portBox" HorizontalAlignment="Left" Margin="642,619,0,0" VerticalAlignment="Top" Width="1068" Height="60" FontSize="14"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="48,23,0,0" VerticalAlignment="Top" Height="43" Width="102" Background="White" BorderBrush="#FFABCBFF" FontFamily="Montserrat SemiBold" FontSize="24" Click="navi_back"/>
     </Grid>
 </Page>

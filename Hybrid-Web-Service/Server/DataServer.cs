@@ -38,7 +38,7 @@ namespace Server
         {
             Jobs job = new Jobs();
             RestClient restClient = new RestClient("http://localhost:49372/");
-            RestRequest restRequest = new RestRequest("api/jobs/search/{id}", Method.Get);
+            RestRequest restRequest = new RestRequest("api/jobs/jobSearch/{id}", Method.Get);
             restRequest.AddUrlSegment("id", id);
             RestResponse restResponse = restClient.Execute(restRequest);
             List<Jobs> jobs = JsonConvert.DeserializeObject<List<Jobs>>(restResponse.Content);

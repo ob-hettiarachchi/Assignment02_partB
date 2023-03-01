@@ -36,7 +36,7 @@ namespace ClientGUI
             Ip = ip;
             ConnectServer_Click();
         }
-       
+
 
         private async void ConnectServer_Click()
         {
@@ -82,7 +82,7 @@ namespace ClientGUI
             return jobs;
         }
 
-  
+
         private void AddJob_Click(object sender, RoutedEventArgs e)
         {
             AddJobsPage reg = new AddJobsPage(clientId);
@@ -94,6 +94,7 @@ namespace ClientGUI
             Jobs selected = job.SelectedItem as Jobs;
             if (selected != null)
             {
+                clientJobId = selected.Id;
                 SelectJob_Click();
             }
             else
@@ -110,6 +111,7 @@ namespace ClientGUI
             Jobs job = await task;
             try
             {
+
                 ScriptEngine engine = Python.CreateEngine();
                 ScriptScope scope = engine.CreateScope();
                 var desc = "";
@@ -136,10 +138,10 @@ namespace ClientGUI
             }
 
             ActiveJobs activej = new ActiveJobs();
-            activej.jobId = clientJobId; 
+            activej.jobId = clientJobId;
             activej.status = 0;
             RestClient restClient = new RestClient("http://localhost:49372/");
-            RestRequest restRequest = new RestRequest("api/jobpools/", Method.Get);
+            RestRequest restRequest = new RestRequest("api/activejobs/", Method.Get);
             RestResponse restResponse = restClient.Execute(restRequest);
             List<ActiveJobs> jobpools = JsonConvert.DeserializeObject<List<ActiveJobs>>(restResponse.Content);
             if (jobpools == null)

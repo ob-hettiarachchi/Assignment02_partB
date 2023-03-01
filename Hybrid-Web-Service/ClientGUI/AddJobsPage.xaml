@@ -5,18 +5,18 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ClientGUI"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="1080" d:DesignWidth="1920"
       Title="AddJobsPage">
 
     <Grid>
 
-        <Label Content="Enter a Description :" HorizontalAlignment="Left" Margin="153,125,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Foreground="White" FontFamily="Montserrat Medium"/>
-        <Label Content="Add a Job" HorizontalAlignment="Center" Margin="0,34,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="48" Foreground="White" Width="446" HorizontalContentAlignment="Center" FontFamily="Montserrat ExtraBold"/>
-        <TextBox x:Name="desbox" HorizontalAlignment="Center" VerticalAlignment="Top" Width="494" Height="109" FontSize="14" Margin="0,157,0,0"/>
-        <Button x:Name="loginbutton" Content="Add" HorizontalAlignment="Center" Margin="0,375,0,0" VerticalAlignment="Top" Width="100" Click="navi_back" Background="#FF1D9802" BorderBrush="White" Height="28" Foreground="White" FontFamily="Montserrat Black" FontSize="14"/>
-        <Label Content="Enter Name :" HorizontalAlignment="Left" Margin="153,298,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="121" FontSize="14" Foreground="White" FontFamily="Montserrat Medium"/>
-        <TextBox x:Name="namebox" HorizontalAlignment="Center" Margin="0,325,0,0" VerticalAlignment="Top" Width="494" Height="32" FontSize="14"/>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="19,15,0,0" VerticalAlignment="Top" Height="28" Width="72" Background="White" BorderBrush="#FFABCBFF" FontFamily="Montserrat SemiBold" FontSize="14" Click="navi_back"/>
+        <Label Content="Enter a Description :" HorizontalAlignment="Left" Margin="218,438,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Foreground="White" FontFamily="Montserrat Medium"/>
+        <Label Content="Add a Job" HorizontalAlignment="Center" Margin="0,34,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="72" Foreground="White" Width="446" HorizontalContentAlignment="Center" FontFamily="Montserrat ExtraBold"/>
+        <TextBox x:Name="desbox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="862" Height="352" FontSize="24" Margin="713,262,0,0"/>
+        <Button x:Name="loginbutton" Content="Add" HorizontalAlignment="Center" Margin="0,944,0,0" VerticalAlignment="Top" Width="156" Click="navi_back" Background="#FF1D9802" BorderBrush="White" Height="48" Foreground="White" FontFamily="Montserrat Black" FontSize="24"/>
+        <Label Content="Enter Name :" HorizontalAlignment="Left" Margin="218,772,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="192" FontSize="24" Foreground="White" FontFamily="Montserrat Medium"/>
+        <TextBox x:Name="namebox" HorizontalAlignment="Left" Margin="713,754,0,0" VerticalAlignment="Top" Width="862" Height="57" FontSize="24"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="19,15,0,0" VerticalAlignment="Top" Height="28" Width="72" Background="White" BorderBrush="#FFABCBFF" FontFamily="Montserrat SemiBold" FontSize="24" Click="navi_back"/>
 
     </Grid>
 </Page>

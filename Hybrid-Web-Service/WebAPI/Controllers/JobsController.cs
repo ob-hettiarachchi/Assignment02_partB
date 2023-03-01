@@ -18,16 +18,15 @@ namespace WebAPI.Controllers
     {
         private LocalDBEntities1 db = new LocalDBEntities1();
 
-        [Route("api/jobs/search/")]
+        [Route("api/jobs/jobSearch/{id}")]
         [HttpGet]
-        public IHttpActionResult GetJobs(int id)
+        public IHttpActionResult jobSearch(int id)
         {
             List<Job> jobs = db.Jobs.Where(d => d.clientId == id).ToList();
             if (jobs == null)
             {
                 return NotFound();
             }
-
             return Ok(jobs);
         }
 
@@ -41,7 +40,7 @@ namespace WebAPI.Controllers
         [ResponseType(typeof(Job))]
         public IHttpActionResult GetJob(int id)
         {
-            List<Job> job = db.Jobs.Where(d => d.clientId == id).ToList();
+            Job job = db.Jobs.Find(id);
             if (job == null)
             {
                 return NotFound();
